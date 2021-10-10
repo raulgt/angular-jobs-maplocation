@@ -20,11 +20,16 @@
       "es2018",
       "dom"
     ]
+    ,"strictPropertyInitialization": false,     
+    "skipLibCheck": true,
+    "typeRoots": [
+      "@types/google-maps"
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
   }
 }

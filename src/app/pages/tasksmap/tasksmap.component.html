@@ -1,0 +1,18 @@
+
+<app-navbar [user]="userDetail.name"></app-navbar>
+
+  <div class="card-group">
+    <div class="card m-l-5 m-t-5">    
+      <div class="card-body">
+        <app-location-map [jobList]="jobList"></app-location-map>
+      </div>
+    </div>
+    <div class="card m-r-5 m-l-5 m-t-5">    
+      <div class="card-body">
+        <app-task-table [jobList]="jobList"></app-task-table>
+      </div>
+    </div>
+    
+  </div>
+
+  <app-footer [userEmail]="userDetail.email" [created]="userDetail.created_at"></app-footer>

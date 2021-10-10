@@ -1,0 +1,13 @@
+p{
+    color: white;
+    display: inline;
+    word-wrap: break-word
+}
+
+a{
+    color: white;
+}
+
+footer > p:nth-child(1), footer > p:nth-child(2){
+    margin-right: 30px;
+}

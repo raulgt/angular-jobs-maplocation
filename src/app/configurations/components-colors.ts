@@ -1,0 +1,1 @@
+export const tableSelecteRow : string = '#f8de7e';
