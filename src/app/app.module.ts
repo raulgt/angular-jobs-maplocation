@@ -40,7 +40,7 @@ import { APP_BASE_HREF } from '@angular/common';
   providers: [  
     {provide: HTTP_INTERCEPTORS, useClass: HttpAuthBearerInterceptor, multi: true},
     UserResolver,
-    // {provide: APP_BASE_HREF, useValue: '/login'}
+    {provide: APP_BASE_HREF, useValue: '/angular-jobs-maplocation/'}
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
