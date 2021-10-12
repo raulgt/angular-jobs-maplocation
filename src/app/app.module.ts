@@ -17,6 +17,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { HttpAuthBearerInterceptor } from './interceptors/http-auth-bearer.interceptor';
 import { UserResolver } from './resolvers/user.resolver';
 import { NavbarComponent } from './common/navbar/navbar.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { NavbarComponent } from './common/navbar/navbar.component';
   providers: [  
     {provide: HTTP_INTERCEPTORS, useClass: HttpAuthBearerInterceptor, multi: true},
     UserResolver,
+    {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
